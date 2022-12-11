@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Admin Home{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <li><a href="{{ url_for('auth.addservice') }}">Add Service</a>
+  <li><a href="{{ url_for('auth.addplaces') }}">Add places</a>
+  <li><a href="{{ url_for('auth.register') }}">Booking Requests</a>
+  <li><a href="{{ url_for('auth.login') }}">View all requests</a>
+{% endblock %}

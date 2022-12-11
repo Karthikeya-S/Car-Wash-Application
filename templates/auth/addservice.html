@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Add Service{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <label for="service_id">Service ID</label>
+        <input name="service_id" id="service_id" required>
+        <br>
+        <label for="service_name">Service Name</label>
+        <input name="service_name" id="service_name" required>
+        <br>
+        <label for="price">Price</label>
+        <input name="price" id="price" required>
+        <br>
+        <input type="submit" value="Add">
+    </form>
+{% endblock %}

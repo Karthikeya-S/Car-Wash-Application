@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Add Place{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <label for="location">Enter Location</label>
+        <input name="location" id="location" required>
+        <br>
+        <input type="submit" value="Add">
+    </form>
+{% endblock %}
